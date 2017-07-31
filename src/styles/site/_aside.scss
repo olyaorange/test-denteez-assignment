@@ -1,0 +1,133 @@
+@import "../variables";
+
+.aside-column {
+  display: flex;
+  flex: 0 0 227px;
+  flex-direction: column;
+  max-width: 227px;
+  &.left-column {
+    padding-right: 15px;
+  }
+  &.right-column {
+    padding-left: 15px;
+  }
+
+  hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid $border-color;
+    margin: 15px 0 0;
+  }
+}
+
+.aside-menu {
+  width: 100%;
+  a {
+    color: $text-color-link;
+    display: block;
+    font-size: 16px;
+    line-height: 42px;
+    position: relative;
+    border-bottom: 1px solid $border-color;
+    padding: 4px 0;
+    &:hover {
+      color: $text-color-hover;
+      transition: all .3s ease-out;
+      background-color: $bg-hover;
+    }
+
+    span {
+      background: url('../images/menu-icons.png') no-repeat;
+      display: inline-block;
+      height: 24px;
+      margin-right: 25px;
+      vertical-align: middle;
+      width: 24px;
+    }
+    .icon-home {
+      background-position: 0 0;
+    }
+    .icon-question {
+      background-position: -24px 0;
+    }
+    .icon-building {
+      background-position: -48px 0;
+    }
+    .icon-paper {
+      background-position: -72px 0;
+    }
+  }
+}
+
+.ads-block {
+  small {
+    font-size: 11px;
+    color: #d3d3d3;
+  }
+}
+
+.recommendations-block {
+  .recommendations-header {
+    h4 {
+      float: left;
+      width: 76%;
+      @include text-overflow;
+    }
+    a {
+      float: right;
+      width: 24%;
+      margin-top: 15px;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: right;
+    }
+  }
+  .recommendations-item {
+    margin-bottom: 15px;
+    @include clearfix;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .recommendations-avatar {
+    border-radius: 4px;
+    float: left;
+    margin-right: 10px;
+    max-width: 80px;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .recommendations-info {
+    width: calc(100% - 90px);
+    float: right;
+    .recommendations-name {
+      margin: -4px 0 0;
+    }
+  }
+  .recommendations-top-name {
+    @include clearfix;
+    .recommendations-name {
+      margin: 0 0 5px;
+    }
+  }
+  .recommendations-name {
+    @include text-overflow;
+  }
+  .recommendations-description {
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-color-secondary;
+    .single-line {
+      line-height: 21px;
+    }
+  }
+  .text-overflow-double-line {
+    margin-bottom: 6px;
+  }
+  .recommendations-link {
+    font-size: 12px;
+  }
+}

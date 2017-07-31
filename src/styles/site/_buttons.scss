@@ -1,0 +1,19 @@
+@import '../variables';
+@import '../mixins';
+
+.button-primary {
+  cursor: pointer;
+  display: inline-block;
+  background-color: $primary-color;
+  color: $light;
+  font-size: 14px;
+  padding: 8px 20px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: background-color .3s ease-out;
+
+  &:hover {
+    background-color: $primary-color-dark;
+    color: $light;
+  }
+}

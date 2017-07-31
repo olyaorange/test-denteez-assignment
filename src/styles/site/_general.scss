@@ -1,0 +1,46 @@
+@import "../variables";
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(../fonts/Proxima_Nova_Regular.otf);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'ProximaNova', -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  color: $text-color;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+  transition: color .3s ease-out;
+  &:hover,
+  &:active {
+    color: $primary-color-dark;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: $screen-min) {
+  .container {
+    width: $screen-min;
+  }
+}
+
+@media (min-width: $screen-max) {
+  .container {
+    width: $screen-max;
+  }
+}

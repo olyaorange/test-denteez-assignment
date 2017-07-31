@@ -1,0 +1,20 @@
+@import '../variables';
+@import '../mixins';
+
+.footer {
+  font-size: 12px;
+  color: $text-color-footer;
+  p {
+    margin: 15px 0;
+  }
+  a {
+    @extend .footer;
+    &:hover {
+      color: $text-color-hover;
+    }
+  }
+  ul li {
+    display: inline-block;
+    padding-right: 15px;
+  }
+}

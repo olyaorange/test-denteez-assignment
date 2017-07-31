@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../dist/assets/css/style.min.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+</head>
+<body>
+<header class="header">
+    <div class="container header-wrapper">
+        <div class="header-logo"><img src="../dist/assets/images/logo.png" alt="Denteez"/></div>
+        <div class="header-search-field">
+            <input type="search" placeholder="Company Name">
+        </div>
+        <div class="header-submenu">
+            <span class="header-submenu-element header-chat"></span>
+            <span class="header-submenu-element header-notification"></span>
+        </div>
+        <div class="header-usermenu">
+            <div class="header-usermenu-avatar">
+                <img src="../dist/assets/images/temp/avatar.jpg" alt="">
+            </div>
+            <div class="header-usermenu-name">Maximillian Beekeeper</div>
+        </div>
+    </div>
+</header>
+<main class="service-page">
+    <div class="container main-wrapper">
+        <aside class="aside-column left-column">
+            <nav class="aside-menu">
+                <ul>
+                    <li><a href="#"><span class="icon-home"></span>Feed</a></li>
+                    <li><a href="#"><span class="icon-question"></span>Ask a Colleague</a></li>
+                    <li><a href="#"><span class="icon-building"></span>Companies</a></li>
+                    <li><a href="#"><span class="icon-paper"></span>Service Directory</a></li>
+                </ul>
+            </nav>
+            <div class="ads-block">
+                <h4>Advertisement</h4>
+                <div class="ads-img-wrapper">
+                    <img src="../dist/assets/images/temp/ads-1.jpg" alt="">
+                </div>
+                <small>Ads By Denteez.com</small>
+            </div>
+            <hr>
+            <div class="recommendations-block">
+                <div class="recommendations-header clearfix">
+                    <h4>Featured Companies</h4>
+                    <a href="#">See All</a>
+                </div>
+                <div class="recommendations-list">
+                    <div class="recommendations-item">
+                        <div class="recommendations-avatar">
+                            <img src="../dist/assets/images/temp/company-1.jpg" alt="">
+                        </div>
+                        <div class="recommendations-info">
+                            <h3 class="recommendations-name"><a href="#">Company Name</a></h3>
+                            <div class="recommendations-description">
+                                <div class="text-overflow single-line">Manufacturer</div>
+                                <div class="text-overflow single-line">Belgrade, Serbia</div>
+                            </div>
+                            <a href="#" class="recommendations-link">Follow Now</a>
+                        </div>
+                    </div>
+                    <div class="recommendations-item">
+                        <div class="recommendations-avatar">
+                            <img src="../dist/assets/images/temp/company-2.jpg" alt="">
+                        </div>
+                        <div class="recommendations-info">
+                            <h3 class="recommendations-name"><a href="#">Very long Company Name</a></h3>
+                            <div class="recommendations-description">
+                                <div class="text-overflow single-line">Service Provider</div>
+                                <div class="text-overflow single-line">New York, USA</div>
+                            </div>
+                            <a href="#" class="recommendations-link">Follow Now</a>
+                        </div>
+                    </div>
+                    <div class="recommendations-item">
+                        <div class="recommendations-avatar">
+                            <img src="../dist/assets/images/temp/company-3.jpg" alt="">
+                        </div>
+                        <div class="recommendations-info">
+                            <h3 class="recommendations-name"><a href="#">Company Name</a></h3>
+                            <div class="recommendations-description">
+                                <div class="text-overflow single-line">Supplier</div>
+                                <div class="text-overflow single-line">London, England</div>
+                            </div>
+                            <a href="#" class="recommendations-link">Follow Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <footer class="footer">
+                <p>Denteez Copyright 2015</p>
+                <ul>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </footer>
+        </aside>
+        <section class="section-column">
+            <div class="clearfix">
+                <h1 class="pull-left">Service Directory</h1>
+                <a href="#" class="button-primary section-top-button pull-right">Add New Service</a>
+            </div>
+            <div class="service-list" id="serviceList">
+                <div class="loading">Loading...</div>
+            </div>
+        </section>
+        <aside class="aside-column right-column">
+            <div class="recommendations-block">
+                <div class="recommendations-header clearfix">
+                    <h4>People you may know</h4>
+                    <a href="#">See All</a>
+                </div>
+                <div class="recommendations-list">
+                    <div class="recommendations-item">
+                        <div class="recommendations-top-name">
+                            <h3 class="recommendations-name"><a href="#">Dennis Adams</a></h3>
+                        </div>
+                        <div class="recommendations-avatar">
+                            <img src="../dist/assets/images/temp/people-1.jpg" alt="">
+                        </div>
+                        <div class="recommendations-info">
+                            <div class="recommendations-description">
+                                <div class="text-overflow-double-line">Dentist (Practice Owner)</div>
+                                <div class="text-overflow">London, England</div>
+                            </div>
+                            <a href="#" class="recommendations-link">Add Friend</a>
+                        </div>
+                    </div>
+                    <div class="recommendations-item">
+                        <div class="recommendations-top-name">
+                            <h3 class="recommendations-name"><a href="#">Mary Carpenter</a></h3>
+                        </div>
+                        <div class="recommendations-avatar">
+                            <img src="../dist/assets/images/temp/people-2.jpg" alt="">
+                        </div>
+                        <div class="recommendations-info">
+                            <div class="recommendations-description">
+                                <div class="text-overflow-double-line">Dentist (Practice Owner) Dentist (Practice
+                                    Owner)
+                                </div>
+                                <div class="text-overflow">Belgrade, Serbia</div>
+                            </div>
+                            <a href="#" class="recommendations-link">Add Friend</a>
+                        </div>
+                    </div>
+                    <div class="recommendations-item">
+                        <div class="recommendations-top-name">
+                            <h3 class="recommendations-name"><a href="#">Danielle Salazar</a></h3>
+                        </div>
+                        <div class="recommendations-avatar">
+                            <img src="../dist/assets/images/temp/people-3.jpg" alt="">
+                        </div>
+                        <div class="recommendations-info">
+                            <div class="recommendations-description">
+                                <div class="text-overflow-double-line">Dentist (Practice Owner)</div>
+                                <div class="text-overflow">Paris, France</div>
+                            </div>
+                            <a href="#" class="recommendations-link">Add Friend</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="recommendations-block">
+                <div class="recommendations-header clearfix">
+                    <h4>Featured Products</h4>
+                    <a href="#">See All</a>
+                </div>
+                <div class="recommendations-list">
+                    <div class="recommendations-item">
+                        <div class="recommendations-top-name">
+                            <h3 class="recommendations-name"><a href="#">Product Name</a></h3>
+                        </div>
+                        <div class="recommendations-avatar">
+                            <img src="../dist/assets/images/temp/products-1.jpg" alt="">
+                        </div>
+                        <div class="recommendations-info">
+                            <div class="recommendations-description">
+                                <div class="text-overflow-five-line">Product Short Description. The quick brown fox
+                                    jumps over the lazy dog.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommendations-item">
+                        <div class="recommendations-top-name">
+                            <h3 class="recommendations-name"><a href="#">Product Name</a></h3>
+                        </div>
+                        <div class="recommendations-avatar">
+                            <img src="../dist/assets/images/temp/products-2.jpg" alt="">
+                        </div>
+                        <div class="recommendations-info">
+                            <div class="recommendations-description">
+                                <div class="text-overflow-five-line">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut autem deleniti
+                                    necessitatibus nihil officiis perferendis quasi quia sequi? Dolorum molestias quos
+                                    similique totam vitae. Accusamus doloremque id libero totam.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="ads-block">
+                <h4>Advertisement</h4>
+                <div class="ads-img-wrapper">
+                    <img src="../dist/assets/images/temp/ads-2.jpg" alt="">
+                </div>
+                <small>Ads By Denteez.com</small>
+            </div>
+        </aside>
+    </div>
+</main>
+</body>
+<script src="../dist/assets/js/script.min.js"></script>
+</html>

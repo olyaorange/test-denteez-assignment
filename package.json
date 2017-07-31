@@ -1,0 +1,28 @@
+{
+  "name": "test-denteez",
+  "version": "1.0.0",
+  "description": "Test assignment for Junior/Middle Frontend Developer position",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Olga Dudko",
+  "license": "ISC",
+  "repository": "github:/olyaorange/test-denteez-assignment",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5"
+  }
+}
