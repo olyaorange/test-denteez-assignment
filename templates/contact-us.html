@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../dist/assets/css/style.min.css">
+</head>
+<body>
+<header class="header contact-us-header">
+    <div class="header-wrapper">
+        <div class="header-logo"><img src="../dist/assets/images/logo.png" alt="Denteez"/></div>
+        <div class="header-button-wrapper">
+            <a href="#" class="button-primary pull-right">Log In Now</a>
+        </div>
+    </div>
+    <div class="header-text-wrapper text-center">
+        <h1>Home of Dentistry</h1>
+        <p>Denteez was created by dentists for dentistry in order to <br>
+            make the life of everyone involved in dentistry easier.</p>
+    </div>
+</header>
+<main class="contact-us-page">
+    <form action="/" id="contactUsForm" method="get">
+        <div class="contact-us-form-wrapper">
+            <small>Fields marked “*” are required</small>
+            <label for="enquiryList">Enquiry Type *</label>
+            <select name="enquiry" id="enquiryList" class="form-simple" required></select>
+            <input type="text" id="enquiryOther" class="form-simple hidden" required>
+            <div class="clearfix">
+                <div class="half-column">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" class="form-simple" required>
+                </div>
+                <div class="half-column">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" class="form-simple" required>
+                </div>
+            </div>
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" class="form-simple" required>
+            <label for="description">Description *</label>
+            <textarea name="description" id="description" cols="30" rows="4" class="form-simple" required></textarea>
+
+            <input id="fileUpload" type="file" />
+            <div id="image-holder"></div>
+        </div>
+        <input type="submit" value="Log In Now" class="button-primary">
+    </form>
+</main>
+</body>
+<script src="../dist/assets/js/script.min.js"></script>
+<script>
+
+</script>
+</html>

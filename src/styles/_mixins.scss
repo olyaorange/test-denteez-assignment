@@ -13,3 +13,8 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+@mixin font-light {
+  font-family: 'ProximaNovaLight';
+  font-weight: 300;
+}

@@ -411,10 +411,16 @@ button {
   background-color: transparent;
   padding: 0; }
 
+p {
+  margin: 0; }
+
 .clearfix:after {
   content: "";
   display: table;
   clear: both; }
+
+.hidden {
+  display: none; }
 
 .pull-left {
   float: left; }
@@ -422,14 +428,157 @@ button {
 .pull-right {
   float: right; }
 
+.text-center {
+  text-align: center; }
+
 .text-overflow {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
 
+.nice-select {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #fff;
+  border-radius: 5px;
+  border: solid 1px #e8e8e8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  height: 42px;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  width: auto; }
+  .nice-select:hover {
+    border-color: #dbdbdb; }
+  .nice-select:active, .nice-select.open, .nice-select:focus {
+    border-color: #999; }
+  .nice-select:after {
+    border-bottom: 2px solid #999;
+    border-right: 2px solid #999;
+    content: '';
+    display: block;
+    height: 5px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+            transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    width: 5px; }
+  .nice-select.open:after {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg); }
+  .nice-select.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0); }
+  .nice-select.disabled {
+    border-color: #ededed;
+    color: #999;
+    pointer-events: none; }
+    .nice-select.disabled:after {
+      border-color: #cccccc; }
+  .nice-select.wide {
+    width: 100%; }
+    .nice-select.wide .list {
+      left: 0 !important;
+      right: 0 !important; }
+  .nice-select.right {
+    float: right; }
+    .nice-select.right .list {
+      left: auto;
+      right: 0; }
+  .nice-select.small {
+    font-size: 12px;
+    height: 36px;
+    line-height: 34px; }
+    .nice-select.small:after {
+      height: 4px;
+      width: 4px; }
+    .nice-select.small .option {
+      line-height: 34px;
+      min-height: 34px; }
+  .nice-select .list {
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+            box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 4px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    -webkit-transform: scale(0.75) translateY(-21px);
+            transform: scale(0.75) translateY(-21px);
+    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9; }
+    .nice-select .list:hover .option:not(:hover) {
+      background-color: transparent !important; }
+  .nice-select .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    min-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 29px;
+    text-align: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+    .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+      background-color: #f6f6f6; }
+    .nice-select .option.selected {
+      font-weight: bold; }
+    .nice-select .option.disabled {
+      background-color: transparent;
+      color: #999;
+      cursor: default; }
+
+.no-csspointerevents .nice-select .list {
+  display: none; }
+
+.no-csspointerevents .nice-select.open .list {
+  display: block; }
+
 @font-face {
   font-family: 'ProximaNova';
   src: url(../fonts/Proxima_Nova_Regular.otf); }
+
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url(../fonts/Proxima_Nova_Light.otf); }
 
 *,
 *:before,
@@ -446,7 +595,7 @@ a {
   color: #1c2534;
   -webkit-transition: color .3s ease-out;
   transition: color .3s ease-out; }
-  a:hover, a:active {
+  a:hover, a:active, a.nice-select.open {
     color: #71973c; }
 
 .container {
@@ -801,5 +950,97 @@ h4 {
   height: 32px;
   margin-top: 13px; }
 
+.contact-us-header {
+  background-image: url("../images/contact-us-bg.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 0;
+  padding-bottom: 35.41667%;
+  font-family: 'ProximaNovaLight';
+  font-weight: 300;
+  color: #fff; }
+  .contact-us-header .header-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .contact-us-header .header-logo {
+    padding-top: 0;
+    margin-top: 40px;
+    margin-left: 50px; }
+  .contact-us-header .header-button-wrapper {
+    margin-top: 45px;
+    margin-right: 40px; }
+  .contact-us-header .header-text-wrapper {
+    margin-top: 7.5%; }
+    .contact-us-header .header-text-wrapper h1 {
+      font-size: 48px;
+      font-weight: 300;
+      margin-bottom: 13px; }
+    .contact-us-header .header-text-wrapper p {
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 0; }
+
+.contact-us-page {
+  background: url("../images/contact-us-pattern-bg.jpg") repeat; }
+
+.contact-us-form-wrapper {
+  background-color: #fff;
+  max-width: 760px;
+  margin: 0 auto;
+  top: -100px;
+  border-radius: 6px;
+  position: relative;
+  padding: 10px 20px; }
+  .contact-us-form-wrapper small {
+    display: block;
+    font-size: 16px;
+    line-height: 32px;
+    color: #c1c1c1;
+    margin-bottom: 6px; }
+  .contact-us-form-wrapper label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 6px; }
+  .contact-us-form-wrapper .nice-select {
+    border-color: #c8cdd5;
+    width: 100%;
+    height: 52px;
+    border-radius: 5px;
+    margin-bottom: 20px; }
+    .contact-us-form-wrapper .nice-select span {
+      font-size: 16px;
+      line-height: 52px; }
+    .contact-us-form-wrapper .nice-select .list {
+      border: 1px solid #c8cdd5;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .contact-us-form-wrapper .nice-select .option.focus,
+    .contact-us-form-wrapper .nice-select .option.selected.focus,
+    .contact-us-form-wrapper .nice-select .option:hover {
+      background-color: #f4f7fb;
+      color: #71973c;
+      font-weight: 400; }
+
+.form-simple {
+  border: 1px solid #c8cdd5;
+  width: 100%;
+  min-height: 51px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 18px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+textarea.form-simple {
+  line-height: 30px;
+  padding: 15px 20px; }
+
+.half-column {
+  width: 48%;
+  float: left; }
+  .half-column + .half-column {
+    float: right; }
+
 body {
-  min-height: 1000px; }
+  min-height: 1400px; }

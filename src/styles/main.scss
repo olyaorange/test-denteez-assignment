@@ -5,6 +5,8 @@
 @import "general/reset";
 @import "general/helper";
 
+@import "plugins/jquery.nice-select";
+
 @import "site/general";
 @import "site/typography";
 @import "site/buttons";
@@ -13,7 +15,8 @@
 @import "site/section";
 @import "site/aside";
 @import "site/service-page";
+@import "site/contact-us-page";
 
 body {
-  min-height: 1000px;
+  min-height: 1400px;
 }

@@ -5,12 +5,20 @@
   @include clearfix;
 }
 
+.hidden {
+  display: none;
+}
+
 .pull-left {
   float: left;
 }
 
 .pull-right {
   float: right;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-overflow {
